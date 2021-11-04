@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
 
-    @include('partials.styles')
+    @include('frontend.partials.styles')
 </head>
 
 <body>
 
-    @include('partials.nav')
+    @include('frontend.partials.nav')
 
     @yield('content')
 
 
 
 
-    @include('partials.footer')
-    @include('partials.scripts')
+    @include('frontend.partials.footer')
+    @include('frontend.partials.scripts')
 
 </body>
 

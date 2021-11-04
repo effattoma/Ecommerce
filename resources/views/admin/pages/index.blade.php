@@ -14,10 +14,15 @@
                                             <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab"
                                                 href="{{ route ('admin.products')}}" role="tab" aria-controls="Products"
                                                 aria-selected="true">Products</a>
+
+
+
+                                                
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences"
-                                                role="tab" aria-selected="false">Audiences</a>
+                                        <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab"
+                                                href="{{ route ('admin.product.create')}}" role="tab" aria-controls="Products"
+                                                aria-selected="true">manage category</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="contact-tab" data-bs-toggle="tab"
