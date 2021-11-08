@@ -12669,11 +12669,11 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #be0e0e;
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #04111b;
   pointer-events: none;
   cursor: default;
 }

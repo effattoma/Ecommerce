@@ -36,5 +36,20 @@ Route::group(['prefix' => 'admin'], function(){
     
 
     });
+
+
+     //category routes
+     Route::group(['prefix' => '/categories'], function(){
+
+      Route::get('/create', 'App\Http\Controllers\backend\CategoryController@create', 'create')->name('admin.category.create');
+      Route::post('/store', 'App\Http\Controllers\backend\CategoryController@store', 'store')->name('admin.category.store');
+      Route::get('/', 'App\Http\Controllers\backend\CategoryController@index')->name('admin.categories');
+      Route::get('edit/{id}', 'App\Http\Controllers\backend\CategoryController@edit')->name('admin.category.edit');
+      Route::post('/update', 'App\Http\Controllers\backend\CategoryController@update')->name('admin.category.update');
+      Route::post('products/edit/{id}', 'App\Http\Controllers\backend\CategoryController@update')->name('admin.category.update');
+      Route::post('products/delete/{id}', 'App\Http\Controllers\backend\CategoryController@delete')->name('admin.category.delete');
+  
+
+  });
    
 });
